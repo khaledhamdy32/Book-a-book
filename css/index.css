@@ -1,0 +1,318 @@
+*{
+    transition: all .5s;
+    list-style: none;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color:#fff;
+}
+nav i{
+    color:#fff;
+}
+nav .my-btn{
+    border: solid 1px rgb(184, 98, 48);
+    background-color: transparent;
+}
+.my-bg{
+    background-color: rgb(184, 98, 48); 
+}
+.h-60{
+    height:60%;
+}
+.w-60{
+    width:65%;
+}
+h1{
+    color:rgb(71, 71, 71);
+}
+#best-selling .cover{
+    background-color:rgb(230, 230, 230) ;
+    border-radius:10px;
+}
+#best-selling h2{
+    font-size:24px;
+    font-style:italic;
+    margin-top:10px;
+    color: rgb(56, 56, 56);
+}
+#best-selling .book-img{
+    margin-top:10px;
+    padding:2px;
+    border-right:1px solid rgba(184, 98, 48,.2)
+}
+#best-selling .book-img .img{
+    position: relative;
+}
+#best-selling .book-img .img .price{
+    color:rgb(92, 92, 92);
+    font-size:16px;
+}
+
+#best-selling .book-img .layer{
+    position: absolute;
+    right: 0;
+    background-color:rgb(233, 27, 27);
+    color:rgb(224, 223, 223);
+    height:40px;
+    top:10px;
+    width:1%;
+    border-bottom-left-radius:10px;
+}
+#best-selling .book-img .layer span{
+    font-weight: 700;
+    margin-right:5px;
+}
+#best-selling .book-img .layer p{
+    display: none;
+}
+#best-selling .book-img .img:hover .layer{
+    width:35%;
+}
+#best-selling .book-img .img:hover .layer p{
+    display:inline;
+    color:rgb(226, 226, 226);
+}
+#best-selling .book-info h3{
+    font-size: 32px;
+    color: rgb(80, 80, 80);
+}
+#best-selling .book-img .img p{
+    color: rgb(92, 92, 92);
+    font-style: italic;
+    font-size:14px;
+}
+#best-selling .book-info span{
+    color:rgb(92, 92, 92);
+    font-style: italic;
+}
+#best-selling .book-info p{
+    color:rgb(92, 92, 92);
+    margin-top:30px;
+}
+#best-selling .book-info i{
+    color:rgb(184, 98, 48);
+    margin-top:40px;
+
+}
+#best-selling .book-info .my-btn{
+    border: none;
+    color:rgb(240, 240, 240);
+    background-color: rgba(30, 189, 182);
+}
+/*HOME 2ND SECTION*/
+#home{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("../images/bg-2.jpg");
+    background-size: cover;
+}
+#home .text , #home h1{
+    margin-top:30px;
+    color:rgb(243, 243, 243);
+    margin: 150px 0 0 0;
+}
+#home .text span{
+    color:rgba(30, 189, 182);
+    font-style: italic;
+}
+#home .text .my-btn{
+    border:none;
+    color:#fff;
+    background-color: rgba(30, 189, 182,.6);
+}
+#home .text .my-btn:hover{
+  background-color: rgba(30, 189, 182)
+}
+#home .book-card{
+    padding: 2px;
+}
+#home .book-card .img{
+    padding:2px;
+    position: relative;
+}
+#home .book-card .img .layer{
+    position: absolute;
+    background-color: white;
+    top:7px;
+    bottom: 7px;
+    right:7px;
+    left:7px;
+    opacity: 0;
+}
+#home .book-card .img:hover .layer{
+    opacity:1;
+}
+#home .book-card .img .layer .book-info h2{
+    color:rgb(71, 71, 71);
+    font-size: 20px;
+}
+#home .book-card .img .layer .book-info span{
+    color:rgb(122, 122, 122);
+    font-style: italic;
+    font-size: 12px;
+}
+#home .book-card .img .layer .book-info p{
+    color:rgb(105, 105, 105);
+    font-size:14px;
+}
+#home .book-card .img .layer .book-info .my-btn{
+    border: none;
+    color:rgb(240,240,240);
+    background-color: rgba(30, 189, 182);
+}
+#home .book-card .img{
+    color:rgb(184, 98, 48);
+    font-size:12px;
+}
+/*GENRES SECTION*/
+#genres h1{
+    color:rgb(80, 80, 80);
+    font-size: 26px;
+    font-weight: 600;
+}
+#genres h2{
+    font-size:16px;
+    padding: 0;
+    margin:0;
+}
+#genres h3{
+    color:rgb(105, 105, 105);
+    margin:0;
+}
+#genres p{
+    color:rgb(122, 122, 122);
+}
+#genres p i{
+    color:rgba(30, 189, 182);
+    cursor: pointer;
+}
+#genres .nav-link{
+    color:rgb(105, 105, 105);
+}
+#genres .nav-link.active{
+    color:rgb(255, 255, 255);
+    background-color: rgba(30, 189, 182);
+}
+#genres .category .check-more{
+    background-color:rgba(30, 189, 182);
+    border:none;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 5s; 
+}
+#genres .category .check-more:hover{
+    background: linear-gradient(to right,#fff,rgba(30,189,182));
+}
+#genres .category .check-more a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+#genres .category .img{
+    position: relative;
+    padding:20px;
+    border:1px solid rgb(184, 76, 13);
+}
+#genres .category .img .layer{
+    position: absolute;
+    background-color: rgba(184, 76, 13,.7);
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0;
+    height:100%;
+}
+#genres .category .img:hover .layer{
+    opacity:1;
+}
+#genres .category .img .layer p{
+    color:rgba(255, 255, 255)
+}
+.owl-carousel{
+    position: relative;
+}
+#genres .owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    color:rgba(30, 189, 182)!important;
+    right:-10px;
+    top:35%;
+    font-size:30px;
+    padding:0 30px 0 30px!important;
+    margin:10px 10px;
+    border-radius: 40%;
+}
+#genres .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    color:rgba(30, 189, 182)!important;
+    left:-10px;
+    top:35%;
+    font-size:30px;
+    padding:0 30px 0 30px!important;
+    margin:10px 10px;
+    border-radius: 40%;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(184, 98, 48);
+}
+footer .col-md-4{
+    border-right:1px solid rgba(255, 255, 255, 0.3);
+}
+footer header{
+    color:#fff;
+    margin:0;
+}
+footer span{
+    color:rgb(41, 241, 231);
+    font-style: italic;
+}
+footer .slogan .h{
+    font-size: 40px;
+    margin:0;
+}
+footer .about a{
+    color:rgb(240,240,240);
+    display: block;
+    text-decoration: none;
+}
+footer .contact-us{
+    color:#fff;
+}
+footer .contact-us .h{
+    font-size:22px;
+}
+footer .contact-us .icons p{
+    font-size:14px;
+    color:rgb(240,240,240);
+}
+footer .contact-us .icons a{
+    color:rgb(240, 240, 240);
+}
+footer .end{
+    background-color: rgb(184, 76, 13);
+}
+footer .end p{
+    font-size:12px;
+    color: rgb(190, 190, 190);
+}
+footer .end span{
+    color:#fff;
+    font-style: normal;
+}
+footer .footer-link{
+    color:rgb(190, 190, 190);
+    font-size:14px;
+}
+footer .row{
+    padding-right:0!important;
+    margin:0!important;
+}
+@keyframes bounce {
+    0% {background-color: rgba(30, 189, 182);}
+    50% {background-color: rgb(184, 76, 13);
+        transform: translateY(20px);
+
+    }
+    100% {background-color: rgba(30, 189, 182);}
+  }
